@@ -1758,7 +1758,7 @@ footer p {
     background: var(--form, rgba(255, 255, 255, 0.75));
   }
 }
-@media (min-width: 1241px) and (max-width: 1440px) {
+@media (min-width: 1241px) and (max-width: 1300px) {
   .layout {
     position: absolute;
     top: 58%;
@@ -1868,6 +1868,123 @@ footer p {
     display: block;
     position: absolute;
     top: 52%;
+    margin: 2px;
+    right: 5px;
+    border-radius: 4px;
+    opacity: 0.7;
+    background: var(--form, rgba(255, 255, 255, 0.75));
+  }
+}
+@media (min-width: 1301px) and (max-width: 1440px) {
+  .layout {
+    position: absolute;
+    top: 58%;
+    width: 80%;
+    height: 83%;
+    flex-shrink: 0;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 15px;
+    border: 5px solid transparent;
+    transition: border 0.5s ease;
+    animation: border-pulse 2s ease-in-out infinite;
+  }
+
+  .answer__layout {
+    position: absolute;
+    top: 58%;
+    width: 80%;
+    height: 70%;
+    flex-shrink: 0;
+    border-radius: 20px;
+    background: var(
+      --secondary-colour,
+      linear-gradient(180deg, #5c006a 0%, #44034f 100%)
+    );
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 15px;
+    display: none;
+  }
+
+  .bottom__container {
+    position: absolute;
+    top: 145%;
+    width: 80%;
+    height: 293px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    background: var(
+      --secondary-colour,
+      linear-gradient(180deg, #5c006a 0%, #44034f 100%)
+    );
+    border: 5px solid #fd0;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin-top: 20px;
+    flex-shrink: 0;
+    background-color: var(
+      --secondary-colour,
+      linear-gradient(180deg, #5c006a 0%, #44034f 100%)
+    );
+    transition: border 0.5s ease;
+    animation: border-pulse 2s ease-in-out infinite;
+  }
+  footer {
+    color: var(--text-colour, #fff);
+    text-align: center;
+    background: var(
+      --secondary-colour,
+      linear-gradient(180deg, #5c006a 0%, #44034f 100%)
+    );
+    width: 100%;
+    height: 83px;
+    flex-shrink: 0;
+    font-family: Montserrat;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 19px;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    position: absolute;
+    top: 210%;
+  }
+
+  footer p {
+    width: 70%;
+  }
+  .amount {
+    display: flex;
+    margin: 10px 0;
+    width: 100%;
+  }
+  .hr-line:after {
+    content: " ";
+    height: 2px;
+    width: 45%;
+    display: block;
+    position: absolute;
+    top: 20%;
+    margin: 2px;
+    right: 5px;
+    border-radius: 4px;
+    opacity: 0.7;
+    background: var(--form, rgba(255, 255, 255, 0.75));
+  }
+  .hr-lines:after {
+    content: " ";
+    height: 2px;
+    width: 75%;
+    display: block;
+    position: absolute;
+    top: 43%;
     margin: 2px;
     right: 5px;
     border-radius: 4px;
